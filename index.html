@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Texting Site</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/resp.css">
+    <link rel="javascript" src="java-js/search.js">
+    
+    <link rel="icon" type="image/png" href="img/ghh.png" sizes="30x30">
+
+
+    <script language="JavaScript">
+        /**
+          * Disable right-click of mouse, F12 key, and save key combinations on page
+          * By Arthur Gareginyan (https://www.arthurgareginyan.com)
+          * For full source code, visit https://mycyberuniverse.com
+          */
+        window.onload = function() {
+          document.addEventListener("contextmenu", function(e){
+            e.preventDefault();
+          }, false);
+          document.addEventListener("keydown", function(e) {
+          //document.onkeydown = function(e) {
+            // "I" key
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+              disabledEvent(e);
+            }
+            // "J" key
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+              disabledEvent(e);
+            }
+            // "S" key + macOS
+            if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+              disabledEvent(e);
+            }
+            // "U" key
+            if (e.ctrlKey && e.keyCode == 85) {
+              disabledEvent(e);
+            }
+            // "F12" key
+            if (event.keyCode == 123) {
+              disabledEvent(e);
+            }
+          }, false);
+          function disabledEvent(e){
+            if (e.stopPropagation){
+              e.stopPropagation();
+            } else if (window.event){
+              window.event.cancelBubble = true;
+            }
+            e.preventDefault();
+            return false;
+          }
+        };
+      </script>
+</head>
+
+<body oncontextmenu="return false;">
+
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="img/black-hat.jpg" alt="logo"></div>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="rightNav v-class-resp">
+            <form id="#" method="get" action="http://www.google.com/">
+                <input type="text" name="search" id="search" name="q" size="21" maxlength="120" placeholder="Search for Google">
+                <button class="btn btn-sm">Search</button>
+            </form>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+    </nav>
+    <section class="background firstSection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big">The future of education - Learning in the 21st century</p>
+                <p class="text-small">
+                    Why education systems need to be redesigned to meet the challenges of an uncertain future. Today most people end up in careers that have nothing to do with what they studied.
+                    Education in the future will need to demonstrate how technology can be used to students' advantage, as well as teach future generations how to handle problems that arise from it. “Technology can change learning forever and we need to embrace it and manipulate it to our advantage,” McLaughlin says.
+
+
+                    <!--Work so quietly that success may make a noise. -->
+                </p>
+            </div>
+            <div class="secondHalf">
+                <img src="img/edu01.jpg" width="300px" height="300px">
+            </div>
+        </div>
+
+    </section>
+    <section class="section">
+        <div class="paras">
+            <p class="sectionTag text-big"> Positive Education</p>
+            <p class="sectionSubTag text-small"> Positive education is an approach to education that draws on positive
+                 psychology's emphasis of individual strengths and personal motivation to promote learning. 
+                 Unlike traditional school approaches in which teachers attempt to tailor their material to 
+                 a mythical "average" student, and move the class altogether using the material through one 
+                 teaching and testing style, positive schooling teachers use techniques that focus on the 
+                 well-being of individual students. Teachers use methods such as developing tailored goals 
+                 for each student to engender learning and working with them to develop the plans and motivation 
+                 to reach their goals. Rather than pushing students to achieve at a set grade level, seen through 
+                 the emphasis of standardized testing, this approach attempts to customize learning goals 
+                 to individual students' levels. Instead of setting students to compete against one another,
+                  learning is viewed as a cooperative process where teachers learn to respect their 
+                  students and each student's input is valued.
+
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="img/edu02.jpg" width="300px" height="300px" alt="black hat"><!-- class="img src Fluid">-->
+        </div>
+    </section>
+
+    <section class="section section-left">
+        <div class="paras">
+            <p class="sectionTag text-big"> Educational Psychology</p>
+            <p class="sectionSubTag text-small"> Educational psychology is the branch of psychology concerned
+                 with the scientific study of human learning. The study of learning processes, from both 
+                 cognitive and behavioral perspectives, allows researchers to understand individual 
+                 differences in intelligence, cognitive development, affect, motivation, self-regulation,
+                  and self-concept, as well as their role in learning. The field of educational psychology
+                   relies heavily on quantitative methods, including testing and measurement, to enhance
+                    educational activities related to instructional design, classroom management,
+                     and assessment, which serve to facilitate learning processes in various educational
+                      settings across the lifespan.
+
+                
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="img/edu03.jpg" width="300px" height="300px" alt="black hat" class="img src Fluid">
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="paras">
+            <p class="sectionTag text-big"> A human being is not attaining his full heights until he is educated.</p>
+            <p class="sectionSubTag text-small"> Hello friends, I have brought a lot of inspirational ideas in 
+                the article of education for all of you today. I hope all these will help you in your path 
+                of success and inspire you to move forward because friends we all know that to be successful. 
+                If all of us will need inspirational thoughts, which will give strength to all of us.
+
+                Today, as many people as they are, whether it is <b>Bill Gates</b> or <b>Gandhi</b>, <b>Steve Jobs</b> or <b>Sachin Tendulkar</b>,
+                 <b>Michael Jackson Yafir Nelson Mandela</b>,<b>Dr. BR Ambedkar</b> we all have one thing in common. He never gives up his courage,
+                  so we should not be encouraged by our goals. Should Nelson Mandela remain in jail for 27 years, even
+                   then he did not give up. But these things have to be said.
+                   <p class="extra">
+                    <b>"The development of knowledge should be the ultimate goal of man." </b>
+                   </p>
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="img/pk01.jpeg" width="300px" height="300px" alt="black hat" class="img src Fluid">
+            <p class="extra">Computer Teach Pravind Sir (B.Sc., BEd.)</p>
+        </div>
+
+    </section>
+    <hr>
+    <!--<secttion class="contact">
+        check site
+        and
+        degien
+
+    </secttion>-->
+    <footer class="background">
+        <p class="text-footer">
+            Copyright &copy; 2021 www.edujesh.cf- All rights reserved
+        </p>
+    </footer>
+    <script src="java-js/resp.js"></script>
+</body>
+
+</html>
